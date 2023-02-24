@@ -37,5 +37,11 @@
 
 目前只支持平行光源阴影.
 
+具体截图如下：
 
 ![image](https://github.com/mljuw/CSharpSoftRenderer/blob/master/Public/Screenshot/1wireframe.png)
+![image](https://github.com/mljuw/CSharpSoftRenderer/blob/master/Public/Screenshot/2wireframenormal.png)
+![image](https://github.com/mljuw/CSharpSoftRenderer/blob/master/Public/Screenshot/3BlinnPhong.jpg)
+![image](https://github.com/mljuw/CSharpSoftRenderer/blob/master/Public/Screenshot/4PBR.jpg)
+![image](https://github.com/mljuw/CSharpSoftRenderer/blob/master/Public/Screenshot/5Shadow.jpg)
+![image](https://github.com/mljuw/CSharpSoftRenderer/blob/master/Public/Screenshot/6ShadowMap.jpg)
