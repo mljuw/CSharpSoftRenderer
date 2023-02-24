@@ -133,16 +133,19 @@ namespace WindowsFormsApp1
                         if (Renderer.DisplayNormal)
                         {
                             var NormalEnd = CurVertex.WorldPos + CurVertex.Normal * DrawNormalLen;
+                            NormalEnd.W = 1;
                             Renderer.DrawLine(StartPoint, ConvertToScreenCoordianPoint(NormalEnd, VPMatrix), new MyFloat3(0, 1, 0));
                         }
                         if (Renderer.DisplayTangent)
                         {
                             var TangentEnd = CurVertex.WorldPos + WorldTangent * DrawNormalLen;
+                            TangentEnd.W = 1;
                             Renderer.DrawLine(StartPoint, ConvertToScreenCoordianPoint(TangentEnd, VPMatrix), new MyFloat3(1, 0, 0));
                         }
                         if(Renderer.DisplayBiTangent)
                         { 
                             var BiTangentEnd = CurVertex.WorldPos + WorldBiTangent * DrawNormalLen;
+                            BiTangentEnd.W = 1;
                             Renderer.DrawLine(StartPoint, ConvertToScreenCoordianPoint(BiTangentEnd, VPMatrix), new MyFloat3(0, 0, 1));
                         }
                     }

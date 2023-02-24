@@ -87,7 +87,7 @@ namespace WindowsFormsApp1
 
         public MyFloat3 Ka = new MyFloat3(0.02f, 0.02f, 0.02f);
 
-        public MyFloat3 SpecularColor = new MyFloat3(1, 1, 1);
+        public MyFloat3 SpecularColor = new MyFloat3(0, 0, 0);
 
         public MyFloat3 DiffuseColor = new MyFloat3(0, 0, 1);
 

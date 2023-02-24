@@ -47,7 +47,7 @@ namespace WindowsFormsApp1.Shader
 
             MyFloat3 Ret = Global.AmbientColor * MatParams.Ka + (Kd + Ks) * ShadowFactor;
             Ret.Clamp(0, 1);
-
+            
             return Ret;
 
             //return Global.AmbientColor;

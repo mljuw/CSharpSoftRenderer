@@ -52,8 +52,8 @@ namespace WindowsFormsApp1
 
         public MyFloat3 GetForwardDir()
         {
-            //TODO.待完善
-            return new MyFloat3(1, 0, 0);
+            
+            return (new MyFloat3(1, 0, 0) * GetMatrix()).XYZ();
         }
 
         public MyFloat3 GetLoc()

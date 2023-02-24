@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
             Renderer.SetScreenSize(1440, 720);
 
             MaterialParams MatParams = new MaterialParams();
-            var ModelPath =  "\\Models\\Sword\\Sword.OBJ";
+            var ModelPath = "\\Models\\Sword\\Sword.OBJ";
             Transform Trans = new Transform();
             Trans.SetLocation(100, 0, 0);
             Trans.SetRotation(0, 0, 0);
@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
             Renderer.AddModel(ModelPath, ShaderType.WireFrame, Trans, MatParams);
         }
 
-        private void LoadBlinnPhongModel()
+        private void LoadBlinnPhongModel1()
         {
 
             MaterialParams MatParams = new MaterialParams();
@@ -70,6 +70,28 @@ namespace WindowsFormsApp1
             Transform Trans = new Transform();
             Trans.SetLocation(100, 0, 0);
             Trans.SetRotation(0, 0, 0);
+
+
+            Renderer.AddModel(ModelPath, ShaderType.BlinnPhong, Trans, MatParams);
+
+        }
+
+        private void LoadBlinnPhongModel2()
+        {
+
+            MaterialParams MatParams = new MaterialParams();
+            MatParams.Ka = new MyFloat3(0.00f, 0.00f, 0.00f);
+            MatParams.Diffuse = new Texture("\\Models\\Drone\\DroneRedMangaDiffuse.tga.PNG", TextureType.sRGB);
+            MatParams.Specular = new Texture("\\Models\\Drone\\DroneRedMangaSpecular.tga.PNG", TextureType.LinearColor);
+            MatParams.NormalMap = new Texture("\\Models\\Drone\\DroneRedMangaNormals.tga.PNG", TextureType.Normal);
+
+
+            /* 飞船 */
+            var ModelPath = "\\Models\\Drone\\model_1.OBJ";
+            Transform Trans = new Transform();
+            Trans.SetLocation(100, 0, 0);
+            Trans.SetRotation(0, 0, 0);
+            Trans.SetScale(0.3f, 0.3f, 0.3f);
 
 
             Renderer.AddModel(ModelPath, ShaderType.BlinnPhong, Trans, MatParams);
@@ -95,11 +117,11 @@ namespace WindowsFormsApp1
             Renderer = new MyRenderer();
             Renderer.SetPrespectiveProjection(90, 1, 1250, 2);
             Renderer.SetScreenSize(1440, 720);
-            Renderer.DisplayShadowMapping = true;
+            Renderer.SetCameraTrans(new MyFloat3(0, 0, 60), new MyFloat3(0, -45, 0));
 
             Renderer.GetShaderGlobal().AmbientColor = new MyFloat3(0.35f, 0.35f, 0.35f);
 
-            LoadBlinnPhongModel();
+            LoadBlinnPhongModel2();
             LoadPanelModel();
 
             DirectionalLight DirectionalLight = new DirectionalLight();
@@ -114,10 +136,11 @@ namespace WindowsFormsApp1
             Renderer = new MyRenderer();
             Renderer.SetPrespectiveProjection(90, 1, 1250, 2);
             Renderer.SetScreenSize(1440, 720);
+            Renderer.SetCameraTrans(new MyFloat3(0, 0, 60), new MyFloat3(0, -45, 0));
 
             Renderer.GetShaderGlobal().AmbientColor = new MyFloat3(0.35f, 0.35f, 0.35f);
 
-            LoadBlinnPhongModel();
+            LoadBlinnPhongModel2();
 
             PointLight PointLight = new PointLight();
             PointLight.Transform.SetLocation(0, 0, 0);
@@ -138,8 +161,9 @@ namespace WindowsFormsApp1
 
 
             /* PBR 模型*/
-            LoadPBRModel1();
+            //LoadPBRModel1();
             LoadPBRModel2();
+            LoadPBRModel3();
 
 
             PointLight PointLight = new PointLight();
@@ -197,6 +221,31 @@ namespace WindowsFormsApp1
             Transform Trans = new Transform();
             Trans.SetLocation(22, -15, 10);
             Trans.SetRotation(0, 90, 0);
+
+            //var ModelPath =  "\\Models\\Sphere.OBJ";
+            //Transform Trans = new Transform();
+            //Trans.SetLocation(new MyFloat3(100, 0, 0));
+            //Trans.SetRotation(new MyFloat3(0, 0, 0));
+
+            Renderer.AddModel(ModelPath, ShaderType.PBR, Trans, MatParams);
+        }
+
+
+        private void LoadPBRModel3()
+        {
+
+            MaterialParams MatParams = new MaterialParams();
+            MatParams.PBRParams.RMSCombine = new Texture("\\Models\\PBR\\Model3\\T_Hero_5_Weapon_S.PNG", TextureType.LinearColor);
+            MatParams.PBRParams.BaseColor = new Texture("\\Models\\PBR\\Model3\\T_Hero_5_Weapon_D.PNG", TextureType.sRGB);
+            MatParams.PBRParams.Emissive = new Texture("\\Models\\PBR\\Model3\\T_Hero_5_Weapon_E.PNG", TextureType.sRGB);
+            MatParams.NormalMap = new Texture("\\Models\\PBR\\Model3\\T_Hero_5_Weapon_N.PNG", TextureType.Normal);
+
+
+            var ModelPath = "\\Models\\PBR\\Model3\\SM_Hero11_Weapon.OBJ";
+            Transform Trans = new Transform();
+            Trans.SetLocation(22, -3, -10);
+            Trans.SetRotation(0, 90, 0);
+            Trans.SetScale(0.45f, 0.45f, 0.45f);
 
             //var ModelPath =  "\\Models\\Sphere.OBJ";
             //Transform Trans = new Transform();

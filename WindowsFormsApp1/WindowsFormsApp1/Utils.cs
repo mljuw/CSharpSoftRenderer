@@ -122,7 +122,14 @@ namespace WindowsFormsApp1
             MyFloat2 DeltaUV2 = UV3 - UV2;
 
 
-            float f = 1.0f / (DeltaUV1.X * DeltaUV2.Y - DeltaUV2.X * DeltaUV1.Y);
+            float DivNum = DeltaUV1.X * DeltaUV2.Y - DeltaUV2.X * DeltaUV1.Y;
+
+            if(DivNum == 0)
+            {
+                return;
+            }
+
+            float f = 1.0f / DivNum;
 
             Tangent.X = f * (DeltaUV2.Y * Edge1.X - DeltaUV1.Y * Edge2.X);
             Tangent.Y = f * (DeltaUV2.Y * Edge1.Y - DeltaUV1.Y * Edge2.Y);
