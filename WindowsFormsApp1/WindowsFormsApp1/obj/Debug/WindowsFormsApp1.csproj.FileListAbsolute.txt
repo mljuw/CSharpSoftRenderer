@@ -1,0 +1,15 @@
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.manifest
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.manifest
+E:\School\CSharpSoftRenderer\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
